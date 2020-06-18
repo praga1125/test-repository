@@ -1,14 +1,13 @@
 #include <stdio.h>
-#include<conio.h>
+#include <conio.h>
 void main(){
- int num[]={5,6,7,8};
- int i,j,size;
- size=sizeof(num)/sizeof(int);
- printf("the pattern is\n");
- for(i=0;i<size;i++){
-   for(j=i;j<size;j++){
-     printf("%d",num[j]);
+  int i,j;
+  printf("the pattern of *\n");
+  printf("\n");
+  for(i=1;i<=4;i++){
+    for(j=1;j<=i;j++){
+       printf("*\t");
+      }
+      printf("\n");
    }
-   printf("\n");
- }
 }
